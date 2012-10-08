@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body bgcolor="black">
+    <font color="white"><b><span id="myCoins">Your coins: 300</span></b></font>
+    <img width="300" height="300" src="data/skyrim.png" /><br>
+    <font color="white"><b>Tile: Skyrim the game!</b></font><br>
+    <font color="white"><b>Descrption: The most epic game ever made!</b></font><br>
+    <font color="white"><b>Cost: 200 Coins</b></font><br>
+    <form>
+      <button type="submit" onclick="buyProduct()" >Buy for 200</button>
+    </form>
+    <script>
+      
+      function buyProduct()
+      {
+        $('#myCoins').text = "Your coins: 100";
+        
+        window.alert( "Thanks for buying skyrim!!!" );
+      }
+      
+    </script>
+    
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </body>
+</html>
